@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Source+Serif+4:opsz,wght@8..60,300&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+    *{
+    box-sizing: border-box;
+    margin-top: 0;
+}
+.container{
+    border-bottom: 1px solid #e6e6e6;   
+ 
+    
+}
+.navbar{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+    margin: 0 auto;
+    padding: 30px 0;
+    align-items: center;
+    position: fixed;
+    background-color:#fff;
+    border-bottom: 1px solid #e6e6e6;   
+   
+    
+}
+
+.log{
+    width:30%;
+    
+}
+
+.nav-list{
+    width: 25%;
+    
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+.nav-list a{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (max-width:992px) {
+    .nav-list{
+        display: none;
+    }
+    .log{
+        width:80%;  
+    }
+    
+    
+   
+}
+
+
+.illust{
+    display: flex;
+    justify-content: center;
+   
+    width: 77%;
+    margin:150px auto ;
+    margin-bottom: 50px;
+    
+
+    
+
+}
+
+.image{
+    width: 60%;
+}
+.content{
+    padding-left: 30px;
+    width: 40%;
+    
+}
+.content a{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #999;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+   
+}
+.content .by{
+    color: #000;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+.content h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-size: 35px;    
+    font-weight: 500;
+    letter-spacing: 0.1cm;
+
+}
+.content p{
+    font-family: 'Source Serif 4', serif;
+    color: #767676;
+    font-weight: 600;
+    
+}
+
+
+.image img{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .illust{
+        display: inline;
+      
+        width: 96%;
+        margin: 0 auto
+    
+    }
+    
+    .image{
+        width: 96%;
+        margin: 0 auto;
+        
+    }
+    .content{
+        padding-left: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }  
+    .content h2{
+    
+        font-size: 20px;    
+        
+    }
+   
+}
+
+
+.photog{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-bottom: 1px solid #e6e6e6;  
+    margin-bottom: 80px;
+}
+
+.photog .item img{
+    width: 100%;
+}
+.photog .item{
+    width: 30%;
+    margin-bottom: 60px;
+}
+.photog .item  a{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #999;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+   
+}
+
+.photog .item .by{
+    color: #000;
+}
+
+.photog .item p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-size: 20px;    
+    font-weight: 500;
+
+    
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .photog{
+      
+        width: 96%;
+        margin: 0 auto
+        
+    }
+    
+    .photog .item{
+        width: 100%;
+       
+    }
+}
+
+.latestposts{
+    width: 80%;
+    margin: 0 auto;
+}
+.posts{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+   
+}
+
+
+.latestposts{
+    border-bottom: 1px solid #e6e6e6;  
+}
+.posts .itempost img{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.posts .itempost{
+    width: 25%;
+    margin-bottom: 60px;
+}
+.posts .itempost  a , .latestposts a{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #999;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+
+   
+}
+
+
+.anc{
+    margin-bottom: 20px;
+}
+
+
+.posts .itempost .by{
+    color: #000;
+}
+
+.posts .itempost p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-size: 20px;    
+    font-weight: 500;
+    margin-top: 20px;
+
+    
+
+}
+
+
+.btn{
+    text-align: center ;
+    margin-bottom: 50px;
+}
+.btn button{
+ 
+ 
+    padding: 20px 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+   cursor: pointer;
+   transition: background-color 0.5s ease , color 0.5s ease;
+}
+
+.btn button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+@media screen and (max-width:768px) {
+    .posts{
+        width: 100%;
+        display: inline;
+        
+    }
+    
+    .posts .itempost{
+        width: 100%;
+       
+    }
+    .posts .itempost img{
+        width: 100%;
+       
+    }
+    .latestposts{
+     
+        width: 96%;
+        margin: 0 auto
+       
+    }
+}
+
+
+.featuredposts{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 12px;
+}
+.featuredposts .postss{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+   
+}
+.featuredposts{
+    border-bottom: 1px solid #e6e6e6;  
+}
+.postss .postitem img{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.postss .postitem{
+    width: 50%;
+    margin-bottom: 60px;
+}
+.postss .postitem  a , .featuredposts a{
+    font-family: 'Libre Franklin', sans-serif;
+    color: #999;
+    
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+
+   
+}
+
+
+.postss .postitem .by{
+    color: #000;
+}
+
+.postss .postitem p{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-size: 20px;    
+    font-weight: 500;
+    margin-top: 20px;
+
+    
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .postss{
+        width: 100%;
+        display: inline;
+        
+        
+    }
+    
+    .postss .postitem{
+        width: 100%;
+       
+    }
+    .postss .postitem img{
+        width: 100%;
+       
+    }
+    .featuredposts{
+        width: 96%;
+        margin: 0 auto
+       
+    }
+}
+*{
+    margin: 0;
+
+}
+
+.footer{
+    background-color: #141414;
+   width: 100%;
+   padding: 20px;
+
+align-items: center;
+   
+}
+
+
+.footeritem{
+    width: 85%;
+    border-bottom: 1px solid #666;   
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    
+  
+}
+
+.footeritem p{
+ 
+    font-family: 'Libre Franklin', sans-serif;
+    color: #666;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    display: inline-block;
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .footeritem{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    
+    }
+}
+
+
+.footersecond{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footercategories {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+}
+
+
+.listitem a{
+     
+    margin-bottom: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.listitem{
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.headers{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #666;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  
+   
+}
+
+
+.headers .left{
+    width: 80%
+}
+    
+.headers .right{
+    width: 25%
+    
+}
+
+
+.subscribe{
+    display: flex;
+    justify-content: flex-start;
+}
+.subscribe input{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    padding: 13px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.subscribe button{
+    width: 100px;
+    height: 50px;
+    background-color: #000;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+    font-size: 10px;
+   cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+
+    border: 0px;
+   
+}
+
+@media screen and (max-width:768px) {
+
+    .footercategories{
+        display: none;
+    }
+
+    .subscribe{
+        width: 100%;
+
+    }
+    .input{
+        width: 95%;
+    }
+    .headers .left{
+        display: none;
+    }
+    .headers .right{
+        width: 100%
+        
+    }
+
+}
+
+
+.cat select{
+  
+    color: #222222;
+    padding: 20px;
+    text-align: left;
+
+ 
+    width: 85%;
+    margin: 0 auto;
+   
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+   
+
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+  
+    font-weight: 400;
+
+}
+.cat ul li{
+   
+    padding: 20px 20px;
+    background-color: #fff;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000;
+    font-weight: 600;
+    border-radius: 3px;
+    
+}
+
+
+
+
+.third{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.info{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.lista{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.lista a{
+     
+    margin-bottom: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.pa{
+
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    margin-left: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #666;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:768px){
+    .third{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .info{
+        width: 50%;
+    }
+    .cat select{
+
+        display: block;
+    }
+}
+  </style>
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="log">
+          <img src="images/logoblack.svg" alt="" />
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="illust">
+      <div class="image">
+        <img alt="" src="https://assets.website-files.com/5b47286ba09814724c5a5ff4/5b48e5a3c57559300cd83d22_image-15.jpg" sizes="100vw" srcset="https://assets.website-files.com/5b47286ba09814724c5a5ff4/5b48e5a3c57559300cd83d22_image-15-p-500.jpeg 500w, https://assets.website-files.com/5b47286ba09814724c5a5ff4/5b48e5a3c57559300cd83d22_image-15-p-1080.jpeg 1080w, https://assets.website-files.com/5b47286ba09814724c5a5ff4/5b48e5a3c57559300cd83d22_image-15-p-1600.jpeg 1600w, https://assets.website-files.com/5b47286ba09814724c5a5ff4/5b48e5a3c57559300cd83d22_image-15.jpg 1700w" class="post-image">
+      </div>
+      <div class="content">
+        <a href="">ILLUSTRATION</a>
+        <h2>JAPAN HOUSE OPENS IN MOUNTAINSIDE TO FOSTER PEAK CREATIVITY.</h2>
+        <p>
+          Enim omittam qui id, ex quo atqui dictas complectitur. Nec ad timeam
+          accusata, hinc justo falli id eum, ferri novum molestie eos cu.
+        </p>
+        <a href="" class="by">BY RETA TORPHY</a>
+      </div>
+    </div>
+
+    <div class="photog">
+      <div class="item">
+        <img src="images/img7.jpg" alt="img7" />
+        <a href="">PHOTOGRAPHY</a>
+        <p>HELMUT LANG CELEBRATES TAXI DRIVERS WORLDWIDE IN LATEST CAMPAIGN</p>
+        <a href="" class="by">BY ALESSANDRA ORTIZ</a>
+      </div>
+      <div class="item">
+        <img src="images/img6.jpg" alt="img6" />
+        <a href="">PHOTOGRAPHY</a>
+        <p>
+          BOWLCUT LAUNCH A NEW SUMMER COLLECTION THAT PAYS HOMAGE TO “UK
+          LEGENDS”
+        </p>
+        <a href="" class="by">BY ROSANNA ONDRICKA</a>
+      </div>
+      <div class="item">
+        <img src="images/img5.jpg" alt="img5" />
+        <a href="">PHOTOGRAPHY</a>
+        <p>
+          THOUSANDS OF PREVIOUSLY UNSEEN PHOTOGRAPHS BY ANDY WARHOL WILL BE MADE
+          PUBLIC THIS AUTUMN
+        </p>
+        <a href="" class="by">BY ANNIE LUEILWITZ</a>
+      </div>
+      <div class="item">
+        <img src="images/img8.jpg" alt="img8" />
+        <a href="">INTERACTIVE DESIGN</a>
+        <p>LONDON-BASED YINKA ILORI’S STORYTELLING FURNITURE</p>
+        <a href="" class="by">BY ANNIE LUEILWITZ</a>
+      </div>
+      <div class="item">
+        <img src="images/img4.jpg" alt="img4" />
+        <a href="" class="by">GRAPHIC DESIGN </a>
+        <p>
+          ANONYMOUS ISRAELI ART COLLECTIVE BROKEN FINGAZ DIRECT MUSIC VIDEO FOR
+          U2 AND BECK
+        </p>
+        <a href="" class="by">BY SIMEON BREKKE</a>
+      </div>
+      <div class="item">
+        <img src="images/img2.jpg" alt="img7" />
+        <a href="">ARCHITECTURE</a>
+        <p>
+          SUZANNE SAROFF’S METICULOUSLY ARRANGED PHOTOGRAPHS ALTER PERCEPTIONS
+        </p>
+        <a href="" class="by">BY RETA TORPHY</a>
+      </div>
+    </div>
+
+    <div class="latestposts">
+      <div class="anc">
+        <a href="">LATEST POSTS</a>
+      </div>
+      <div class="posts">
+        <div class="itempost">
+          <img src="images/img1.jpg" alt="img1" />
+          <a href="">ILLUSTRATION</a>
+          <p>JAPAN HOUSE OPENS IN MOUNTAINSIDE TO FOSTER PEAK CREATIVITY.</p>
+          <a href="" class="by">BY RETA TORPHY </a>
+        </div>
+        <div class="itempost">
+          <img src="images/img7.jpg" alt="img7" />
+          <a href="">PHOTOGRAPHY</a>
+          <p>
+            HELMUT LANG CELEBRATES TAXI DRIVERS WORLDWIDE IN LATEST CAMPAIGN
+          </p>
+          <a href="" class="by">BY ALESSANDRA ORTIZ</a>
+        </div>
+        <div class="itempost">
+          <img src="images/img6.jpg" alt="img6" />
+          <a href="">PHOTOGRAPHY</a>
+          <p>
+            BOWLCUT LAUNCH A NEW SUMMER COLLECTION THAT PAYS HOMAGE TO “UK
+            LEGENDS”
+          </p>
+          <a href="" class="by">BY ROSANNA ONDRICKA</a>
+        </div>
+        <div class="itempost">
+          <img src="images/img5.jpg" alt="img5" />
+          <a href="">PHOTOGRAPHY</a>
+          <p>
+            THOUSANDS OF PREVIOUSLY UNSEEN PHOTOGRAPHS BY ANDY WARHOL WILL BE
+            MADE PUBLIC THIS AUTUMN
+          </p>
+          <a href="" class="by">BY ANNIE LUEILWITZ</a>
+        </div>
+        <div class="itempost">
+          <img src="images/img8.jpg" alt="img8" />
+          <a href="">INTERACTIVE DESIGN</a>
+          <p>LONDON-BASED YINKA ILORI’S STORYTELLING FURNITURE</p>
+          <a href="" class="by">BY ANNIE LUEILWITZ</a>
+        </div>
+        <div class="itempost">
+          <img src="images/img4.jpg" alt="img4" />
+          <a href="">GRAPHIC DESIGN </a>
+          <p>
+            ANONYMOUS ISRAELI ART COLLECTIVE BROKEN FINGAZ DIRECT MUSIC VIDEO
+            FOR U2 AND BECK
+          </p>
+          <a href="" class="by">BY SIMEON BREKKE</a>
+        </div>
+        <div class="itempost">
+          <img src="images/img2.jpg" alt="img7" />
+          <a href="">ARCHITECTURE</a>
+          <p>
+            SUZANNE SAROFF’S METICULOUSLY ARRANGED PHOTOGRAPHS ALTER PERCEPTIONS
+          </p>
+          <a href="" class="by">BY RETA TORPHY</a>
+        </div>
+        <div class="itempost">
+          <img src="images/img3.jpg" alt="img7" />
+          <a href="">GRAPHIC DESIGN</a>
+          <p>
+            ANU AMBASNA’S PLAYFUL ILLUSTRATIONS CELEBRATE CLUB CULTURE, BROWN
+            BODIES AND PERFECT PAUNCHES
+          </p>
+          <a href="" class="by">BY LEO BARTELL</a>
+        </div>
+      </div>
+      <div class="btn">
+        <button>VIEW ALL LATEST POSTS</button>
+      </div>
+    </div>
+
+    <div class="featuredposts">
+      <div class="anc">
+        <a href="">FEATURED POSTS</a>
+      </div>
+      <div class="postss">
+        <div class="postitem">
+          <img src="images/img9.jpg" alt="img9" />
+          <a href="">GRAPHIC DESIGN</a>
+          <p>A BRIEF HISTORY OF THE FIFA WORLD CUP LOGO</p>
+          <a href="" class="by">BY CLEM ONOJEGHUO </a>
+        </div>
+
+        <div class="postitem">
+          <img src="images/img12.jpg" alt="img12" />
+          <a href="">GRAPHIC DESIGN</a>
+          <p>
+            NEED A GUIDE TO LA’S GRAPHIC DESIGN SCENE? SHOPLIFTERS’ NEW ISSUE
+            HAS GOT YOUR BACK
+          </p>
+          <a href="" class="by">BY ALESSANDRA ORTIZ</a>
+        </div>
+        <div class="postitem">
+          <img src="images/img11.jpg" alt="img11" />
+          <a href="">PHOTOGRAPHY</a>
+          <p>FRED ROWSON DIRECTS FILM FOR YEARS AND YEARS</p>
+          <a href="" class="by">BY COBY GOTTLIEB</a>
+        </div>
+        <div class="postitem">
+          <img src="images/img10.jpg" alt="img10" />
+          <a href="">ILLUSTRATION</a>
+          <p>
+            M&C SAATCHI AND FONTSMITH COLLABORATE ON FONT COLLECTION FOR HOUSE
+            OF ST BARNABAS
+          </p>
+          <a href="" class="by">BY ANNIE LUEILWITZ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footeritem">
+       <img src="images/logowhite.svg" alt="" /><p>© 2018 NOICELAND™, ALL RIGHTS RESERVED TO AHMED ADLY</p>
+      </div>
+
+
+<div class="headers">
+    <div class="left">
+    CATEGORIES
+</div>
+<div class="right">
+    SUBSCRIBE TO NEWSLETTER
+</div>
+</div>
+
+      <div class="footersecond">
+     
+     
+      <div class="footercategories">
+       
+       <div class="listitem"><a href="">Animation</a></div> 
+       <div class="listitem"><a href="">Architecture</a></div> 
+        <div class="listitem"> <a href="">Graphic Design</a></div> 
+       <div class="listitem"> <a href="">Illustration</a></div> 
+         <div class="listitem"><a href="">Interactive Design</a></div> 
+        <div class="listitem"> <a href="">Miscellaneous</a></div> 
+      <div class="listitem"> <a href="">Photography</a></div> 
+     <div class="listitem"> <a href="">Product Design</a></div> 
+       
+      </div>
+      <div class="subscribe">
+        <div class="input">
+            <input type="text" placeholder="Email address"/>
+        </div>
+        <div class="biton">
+        <button>SEND</button>
+        </div>
+        
+      </div>
+    
+    </div>
+
+    
+    <div class="cat">
+        <select>
+          <ul>
+        <li><option>Category</option></li>
+        <li><option>Animation</option></li>
+        <li><option>Graphic Design</option></li>
+        <li><option>Illustration</option></li>
+        <li><option>Interactive Design</option></li>
+        <li><option>Miscellaneous</option></li>
+        <li><option>Photography</option></li>
+        <li><option>Product Design</option></li>
+          </ul>
+        </select>
+      </div>
+
+  <div class="third">  
+<div class="info">
+    <div class="pa">
+        INFORMATION
+    </div>
+    
+    <div class="lista"> <a href="">about</a></div> 
+    <div class="lista"> <a href="">contact</a></div> 
+   <div class="lista"> <a href="">terms</a></div> 
+</div>
+<div class="info">
+    <div class="pa">
+        FOLLOW US
+    </div>
+    
+    <div class="lista"> <a href="">instagram</a></div> 
+    <div class="lista"> <a href="">facebook</a></div> 
+   <div class="lista"> <a href="">twitter</a></div> 
+</div>
+<div class="info">
+    <div class="pa">
+        TEMPLATE
+    </div>
+    
+    <div class="lista"> <a href="">Image Lisense Info</a></div> 
+    <div class="lista"> <a href="">Powered by ADLY'S</a></div> 
+
+</div>
+
+
+    </div>
+</div>  
+  </body>
+</html>
